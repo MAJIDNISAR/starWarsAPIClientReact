@@ -24,7 +24,7 @@
   color: yellow;
 }
 .btnRandomizer{
-  margin-top:40rem;
+  margin-top:38rem;
   position:fixed;
   background-color: black;
   border: 1px solid yellow;
@@ -33,9 +33,11 @@
   font-size: 25px;
 }
 table{
+   postion: center;
    border: 1px solid yellow;
    margin-top:70px;
    width:100%;
+   color:yellow
 }
 
 .App-link {
