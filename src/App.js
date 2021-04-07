@@ -7,9 +7,7 @@ import StarWars from './StarWars'
 function App () {
   return (
     <div className='App'>
-     
-        <StarWars className='StarWars' />
-     npm 
+      <StarWars className='StarWars' />
     </div>
   )
 }

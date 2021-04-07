@@ -24,20 +24,49 @@
   color: yellow;
 }
 .btnRandomizer{
-  margin-top:38rem;
+  display: flex;
+  border-radius: 15px;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin-top:35rem;
   position:fixed;
   background-color: black;
   border: 1px solid yellow;
   color: yellow;
   padding: 20px;
   font-size: 25px;
+  margin-left: 42%;
 }
 table{
-   postion: center;
+  margin-left:auto; 
+    margin-right:auto;
+   table-layout:fixed;
+   overflow-x:auto;
+   /* position: center;
+   border-collapse: collapse;
+   border-color: yellow; */
    border: 1px solid yellow;
-   margin-top:70px;
-   width:100%;
+   border-radius:15px;
+   /* margin-top:70px;
+   width:100%; */
    color:yellow
+}
+th, td {
+  position:fixed center;
+  border-radius:15px;
+  padding: 2px;
+  text-align: left;
+  border: 1px solid yellow;
+   color: #fff;
+  font-family: "ITC Serif Gothic", Lato;
+  font-size: .8em;
+  left: -2em;
+  letter-spacing: 0.4em;
+  right: -2em;
+  text-align: center;
+  text-transform: uppercase;
+  top: 29%;
 }
 
 .App-link {
@@ -68,7 +97,7 @@ table{
   animation: move-byline 10s linear infinite;
 }
 
-.Starwars{
+.starwars{
    animation: move-byline 10s linear infinite;
 }
 
