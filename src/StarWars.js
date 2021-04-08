@@ -1,4 +1,5 @@
 import React from 'react'
+import audio from './lightsaber.mp3'
 class IntroStarWars extends React.Component {
   render () {
     return (
@@ -33,10 +34,12 @@ class StarWars extends React.Component {
   }
 
   randomize () {
+    let sound=document.getElementById('audio')
+    sound.play()
     const randomNumber = Math.round(Math.random() * 88)
     // const randomNumber = Math.round(Math.random() * 100)
     const URL = `https://swapi.dev/api/people/${randomNumber}/`
-    const imageRequestURL = `https://github.com/akabab/starwars-api/tree/master/api/id/${randomNumber}.json/`
+    // const imageRequestURL = `https://github.com/akabab/starwars-api/tree/master/api/id/${randomNumber}.json/`
     // fetch(imageRequestURL)
     // .then(response=>{
     //   console.log(response)
@@ -90,6 +93,7 @@ class StarWars extends React.Component {
           type='button' className='btnRandomizer'
         > Randomise! Character
         </button>
+        <audio id="audio" src={audio}></audio>
       </div>
     )
   }
